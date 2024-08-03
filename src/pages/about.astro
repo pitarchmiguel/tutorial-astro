@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 const pageTitle = "Información sobre mí";
 
 const identity = {
@@ -12,6 +13,8 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de do
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "navy";
 ---
 
 <html lang="en">
@@ -21,45 +24,6 @@ const goal = 3;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-        <style>
-
-            body {
-                width: 1000px;
-                margin: 0 auto;
-            }
-            nav {
-                display: flex;
-                justify-content: center;
-                font-size: 1.2rem
-            }
-
-            ul {
-                display: flex;
-            }
-
-            a {
-                display: block;
-                padding: .5rem;
-            }
-
-            a:hover {
-                background-color: rgb(220, 220, 220);
-                border-radius: 5px;
-                transition: background-color .3s ease-in;
-            }
-
-            h1 {
-                text-align: center;
-                font-size: 3rem;
-            }
-
-            h2 {
-                text-align: center;
-                font-size: 1.2rem;
-                padding: 1rem;
-                background-color: salmon;
-            }
-        </style>
 	</head>
 	<body>
 
@@ -84,7 +48,7 @@ const goal = 3;
             </ul>
             <p>Mis habilidades son:</p>
             <ul>
-            {skills.map((skill) => <li>{skill}</li>)}
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
             </ul>
 
             {happy && <p>¡Estoy feliz de aprender Astro!</p>}
