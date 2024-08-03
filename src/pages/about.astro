@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css';
 const pageTitle = "Información sobre mí";
+import Navigation from '../components/Navigation.astro';
 
 const identity = {
-  firstName: "Sarah",
+  firstName: "Lorena",
   country: "Canada",
   occupation: "Escritor técnico",
   hobbies: ["fotografia", "observación de aves", "peñarol"],
@@ -27,13 +28,7 @@ const skillColor = "navy";
 	</head>
 	<body>
 
-        <nav>
-            <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/about">Sobre mi</a></li>
-            <li><a href="/blog">Blog</a></li>
-            </ul>
-        </nav>
+        <Navigation/>
         
 		<h1>{pageTitle}</h1>
         <h2>Soy Miguel Pitarch, desde pequeño que me gusta la tecnología, he estado trabajando en el mundo de la programación desde hace unos años, y desde entonces he estado aprendiendo y mejorando mi habilidad en la programación, y en la tecnología en general.</h2>

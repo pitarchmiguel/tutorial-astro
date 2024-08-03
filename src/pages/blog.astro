@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 const pageTitle = "Blog de información sobre programación";
+import Navigation from '../components/Navigation.astro';
 ---
 
 <html lang="en">
@@ -12,11 +13,7 @@ const pageTitle = "Blog de información sobre programación";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<nav>
-            <a href="/">Inicio</a>
-            <a href="/about">Sobre mí</a>
-            <a href="/blog">Blog</a>
-        </nav>
+		<Navigation/>
 
 		<h1>{pageTitle}</h1>
 		<h2>Empezaremos a darle forma a este blog</h2>
