@@ -44,7 +44,6 @@ html {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #8fb590;
   display: none;
   margin: 0;
 }
@@ -97,11 +96,6 @@ html {
   height: 5px;
   margin-bottom: 10px;
   background-color: #9f9f9f;
-}
-
-.hamburger:checked {
-  display: block;
-  background-color: rgb(0, 136, 255);
 }
 
 html.dark {
