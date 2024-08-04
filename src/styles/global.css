@@ -44,7 +44,7 @@ html {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #8fb590;
   display: none;
   margin: 0;
 }
@@ -61,7 +61,7 @@ html {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #8fb590;
 }
 
 .expanded {
