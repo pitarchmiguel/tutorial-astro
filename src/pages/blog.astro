@@ -1,27 +1,13 @@
 ---
-import '../styles/global.css';
-const pageTitle = "Blog de información sobre programación";
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Espacio para blog personal";
 ---
+<BaseLayout pageTitle={pageTitle}>
+	<h2>Empezaremos a darle forma a este blog</h2>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Navigation/>
-
-		<h1>{pageTitle}</h1>
-		<h2>Empezaremos a darle forma a este blog</h2>
-
-        <ul>
-            <li><a href="/posts/post-1">Mi primera publicación</a></li>
-            <li><a href="/posts/post-2">Mi segunda publicación</a></li>
-            <li><a href="/posts/post-3">Mi tercera publicación</a></li>
-        </ul>
-	</body>
-</html>
+	<ul class="blog">
+		<li><a href="/posts/post-1">Mi primera publicación</a></li>
+		<li><a href="/posts/post-2">Mi segunda publicación</a></li>
+		<li><a href="/posts/post-3">Mi tercera publicación</a></li>
+	</ul>
+</BaseLayout>
